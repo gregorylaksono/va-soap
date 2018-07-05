@@ -1,0 +1,27 @@
+<form>
+  <div class="form-group">
+    <label for="vaNo">VA </label>
+    <input type="text" class="form-control" id="vaNo" value="{{va.vaNo}}" disabled>
+  </div>
+  <div class="form-group">
+    <label for="vaAmount">Amount</label>
+    <input type="text" class="form-control" id="vaAmount" value="{{va.amount}}" disabled>
+  </div>
+  <div class="form-group">
+    <label for="vaCustomer">Customer</label>
+    <input type="text" class="form-control" id="vaCustomer" value="{{va.customer}}" disabled>
+  </div>
+  <div class="form-group">
+    <label for="vaExpired">Expired on</label>
+    <input type="text" class="form-control" id="vaExpired" value="{{va.expired}}" disabled>
+  </div>
+  <div class="form-group">
+      <label for="vaStatus">Status</label>
+      <input type="text" class="form-control" id="vaStatus" value="{{va.status}}" disabled>
+    </div>
+  <a class="btn btn-primary" style="margin-right: 10px; color:white !important;" (click)="back()" >Back</a>
+  
+  <a *ngIf="canProcessed" class="btn btn-primary" style="color:white !important;" (click)="payment()" >Submit payment</a>
+  
+  
+</form>
